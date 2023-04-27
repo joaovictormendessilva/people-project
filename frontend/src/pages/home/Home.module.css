@@ -1,0 +1,81 @@
+form{
+    width: 70%;
+    margin: 60px auto;
+}
+
+form h2{
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 40px;
+}
+
+.formControl{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.formControl input{
+    width: 60%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #f5f5f5;
+}
+
+.formControl button{
+    border: none;
+    background-color: #58af9c;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.tableRegisters{
+    margin: 0 auto;
+    border-collapse: collapse;
+    min-width: 50%;
+}
+
+.tableRegisters td, th{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.tableRegisters tr{
+    border-bottom: solid 1px #58af9c47;
+    border-left: solid 2px #58af9c;
+    padding-bottom: 10em;
+}
+
+.tableRegisters .actions{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tableRegisters .actions button, 
+.tableRegisters .actions a {
+    background-color: transparent;
+    border: none;
+    color: #58af9c !important;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.emptyAPI{
+    text-align: center;
+}
+
+.emptyAPI a{
+    color: #58af9c;
+}
+
+@media (max-width: 500px){
+    form{
+        width: 100%;
+    }
+}

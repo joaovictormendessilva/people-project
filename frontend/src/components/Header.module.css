@@ -1,0 +1,23 @@
+.header{
+    background-color: #58af9c;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px;
+}
+
+.header ul li{
+    padding: 0 10px;
+}
+
+.header ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.header ul li a:hover{
+    border-bottom: solid 1px white;
+}
