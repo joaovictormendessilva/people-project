@@ -85,21 +85,9 @@ module.exports = class PersonController{
     }
     
     static async allPeople(req, res) {
-        console.log(req.query.search)
-        let search = '';
-
-        
-
-        if (req.query.seach) {
-            search = req.query.search
-        };
-
 
         const people = await Person.findAll({
-            raw: true,
-            where: {
-                name: { [Op.like]: `%${search}%` }
-            }
+            raw: true
         });
         
         res.send(people);
